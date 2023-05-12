@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MAEC XML Visualizer</title>
+    
+    <!-- Use of jsDelivr (Delivers cached package of Bootstrap's Stripped CSS) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Use of jsDelivr (Delivers cached package of Tabulator's Stripped CSS) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tabulator-tables@5.2.3/dist/css/tabulator_bootstrap5.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Linking to external style sheet -->
+    <link rel="stylesheet" href="css/visualizer.css" />
+  </head>
+
+
+  <body>
+    <!-- Creating a responsive bootstrap container at 100% scale -->
+    <div class="container-xxl py-4">
+        <!-- Creating a responsive flexbox grid for the tool's main page --> 
+        <div class="row gy-4">
+          <!-- Creating a grid column bootstrap's maximum width -->  
+          <div class="col-12">
+           
+            <!-- Setting label of XML Upload Button -->
+            <label for="xmlFileInput" class="btn btn-outline-primary">Upload MAEC Report (XML FILES ONLY)</label>
+  
+            
+            <!-- Assigning bootstrap form control styling and customization -->
+            <input
+              class="form-control form-control-sm d-none"
+              type="file"
+              id="xmlFileInput"
+              accept=".xml"
+            />
+  
+            <!-- Displaying the uploaded MAEC file's name next to the upload button -->
+            <output for="xmlFileInput" class="ms-2" >
+  
+            </output>
+          </div>
+          <!-- Creating a grid column bootstrap's maximum width --> 
+          <!--<div class="col-12">
+            <!- Setting header above the MAEC Results Table --> 
+            <!--<h2 class="card-header">MAEC Results Table</h2>
+            <div class="card shadow" hidden>
+              <!- Preparing container for the generated XML Table -->  
+              <!--<div class="card-body">
+                <div id="xmlTable"></div>
+              </div>
+            </div>
+          </div>
+          <!- Creating a grid column bootstrap's maximum width -->
+          <div class="col-12">
+            <!-- Setting header above the MAEC Graphic Visualization -->    
+            <h2 class="card-header">MAEC Graphic Visualisation</h2>  
+            <div class="card shadow" hidden>
+              <!-- Preparing container for the rendered tree-graph visualization -->  
+              <div class="card-body">
+  
+                <div id="xmlTree"></div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Delivering cached versions of bootstrap and d3 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xml-js@1.6.11/dist/xml-js.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@5.2.3/dist/js/tabulator.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-flextree@2.1.2/build/d3-flextree.min.js"></script>
+
+    <!-- Running the JavaScript files necessary for the tool to function -->
+    <script src="js/constants.js"></script>
+    <script src="js/maec_processing.js"></script>
+    <script src="js/maec_table.js"></script>
+    <script src="js/maec_tooltip.js"></script>
+    <script src="js/maec_tree.js"></script>
+    <script src="js/maec_upload.js"></script>
+    <script src="js/visualizer.js"></script>
+  </body>
+</html>

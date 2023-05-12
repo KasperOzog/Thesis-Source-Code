@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<maecPackage:MAEC_Package xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2"
+	xmlns:maecPackage="http://maec.mitre.org/XMLSchema/maec-package-2"
+	xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
+	xmlns:ProcessObj="http://cybox.mitre.org/objects#ProcessObject-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:Falcon="http://www.payload-security.com/"
+	xmlns:maecBundle="http://maec.mitre.org/XMLSchema/maec-bundle-4"
+	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	
+	xsi:schemaLocation="http://cybox.mitre.org/objects#FileObject-2 http://cybox.mitre.org/XMLSchema/objects/File/2.1/File_Object.xsd
+	http://maec.mitre.org/XMLSchema/maec-package-2 http://maec.mitre.org/language/version4.1/maec_package_schema.xsd
+	http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd
+	http://cybox.mitre.org/objects#ProcessObject-2 http://cybox.mitre.org/XMLSchema/objects/Process/2.1/Process_Object.xsd
+	http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd
+	http://maec.mitre.org/XMLSchema/maec-bundle-4 http://maec.mitre.org/language/version4.1/maec_bundle_schema.xsd
+	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd" id="Falcon:package-73459096-99fa-4b18-ad2a-4706737762de" schema_version="2.1">
+    <maecPackage:Malware_Subjects>
+        <maecPackage:Malware_Subject id="Falcon:malware_subject-671a7a41-ccb6-4277-8929-37e1ced2c0b5">
+            <maecPackage:Malware_Instance_Object_Attributes id="Falcon:Object-cbd33db6-01f4-4a3a-a926-391e01ab617b">
+                <cybox:Properties xsi:type="FileObj:FileObjectType">
+                    <FileObj:File_Name>1315d08d04855e18f81bfe17764eb367de65a360995d49b85d1013df0340952f</FileObj:File_Name>
+                    <FileObj:Size_In_Bytes>641536</FileObj:Size_In_Bytes>
+                    <FileObj:File_Format>PE32 executable (GUI) Intel 80386, for MS Windows</FileObj:File_Format>
+                    <FileObj:Hashes>
+                        <cyboxCommon:Hash>
+                            <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+                            <cyboxCommon:Simple_Hash_Value>c95c61ee4fa1b0776a57f3f872101bf7</cyboxCommon:Simple_Hash_Value>
+                        </cyboxCommon:Hash>
+                        <cyboxCommon:Hash>
+                            <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA1</cyboxCommon:Type>
+                            <cyboxCommon:Simple_Hash_Value>293b0c491b59acb42d96963c5ef23e6236b20e94</cyboxCommon:Simple_Hash_Value>
+                        </cyboxCommon:Hash>
+                        <cyboxCommon:Hash>
+                            <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                            <cyboxCommon:Simple_Hash_Value>1315d08d04855e18f81bfe17764eb367de65a360995d49b85d1013df0340952f</cyboxCommon:Simple_Hash_Value>
+                        </cyboxCommon:Hash>
+                        <cyboxCommon:Hash>
+                            <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA512</cyboxCommon:Type>
+                            <cyboxCommon:Simple_Hash_Value>34bf71060c5f1a40aaa8b91ffb420f68ddcaf270b8f3b67b2f0421d400648394ce25554e45ae6e8aafcaa1f24157cdd69ab9fe30a3ee528fa69c28e12b5cf4ca</cyboxCommon:Simple_Hash_Value>
+                        </cyboxCommon:Hash>
+                    </FileObj:Hashes>
+                </cybox:Properties>
+            </maecPackage:Malware_Instance_Object_Attributes>
+            <maecPackage:Analyses>
+                <maecPackage:Analysis start_datetime="2022-02-09 11:45:18" complete_datetime="2022-02-09 11:48:46" id="Falcon:analysis-3c82220d-8a7b-43a3-821c-4cca47ca4f9c">
+                    <maecPackage:Source>
+                        <maecPackage:Name>Falcon Sandbox v9.0.1</maecPackage:Name>
+                        <maecPackage:Organization>Hybrid Analysis</maecPackage:Organization>
+                        <maecPackage:URL>http://www.payload-security.com/</maecPackage:URL>
+                    </maecPackage:Source>
+                    <maecPackage:Dynamic_Analysis_Metadata>
+                        <maecPackage:Analysis_Duration>208.000000</maecPackage:Analysis_Duration>
+                    </maecPackage:Dynamic_Analysis_Metadata>
+                    <maecPackage:Analysis_Environment>
+                        <maecPackage:Network_Infrastructure>
+                            <maecPackage:Captured_Protocols>
+                                <maecPackage:Protocol layer7_protocol="HTTP"/>
+                                <maecPackage:Protocol layer7_protocol="FTP"/>
+                                <maecPackage:Protocol layer7_protocol="HTTPS"/>
+                                <maecPackage:Protocol layer7_protocol="SMTP"/>
+                                <maecPackage:Protocol layer4_protocol="TCP"/>
+                                <maecPackage:Protocol layer4_protocol="UDP"/>
+                            </maecPackage:Captured_Protocols>
+                        </maecPackage:Network_Infrastructure>
+                    </maecPackage:Analysis_Environment>
+                </maecPackage:Analysis>
+            </maecPackage:Analyses>
+            <maecPackage:Findings_Bundles>
+                <maecPackage:Bundle defined_subject="false" id="Falcon:bundle-f5b07be0-ae18-4180-bc24-9956d4a0f5f6" schema_version="4.1">
+                    <maecBundle:AV_Classifications>
+                        <maecBundle:AV_Classification>
+                            <cyboxCommon:Vendor>Antiy-AVL</cyboxCommon:Vendor>
+                            <maecBundle:Engine_Version>3.0.0.1</maecBundle:Engine_Version>
+                            <maecBundle:Classification_Name>Trojan/Generic.ASMalwS.34DC7F9</maecBundle:Classification_Name>
+                        </maecBundle:AV_Classification>
+                        <maecBundle:AV_Classification>
+                            <cyboxCommon:Vendor>MaxSecure</cyboxCommon:Vendor>
+                            <maecBundle:Engine_Version>1.0.0.1</maecBundle:Engine_Version>
+                            <maecBundle:Classification_Name>Trojan.Malware.300983.susgen</maecBundle:Classification_Name>
+                        </maecBundle:AV_Classification>
+                        <maecBundle:AV_Classification>
+                            <cyboxCommon:Vendor>Antiy-AVL</cyboxCommon:Vendor>
+                            <maecBundle:Engine_Version>3.0.0.1</maecBundle:Engine_Version>
+                            <maecBundle:Classification_Name>Trojan/Generic.ASMalwS.34DC7F9</maecBundle:Classification_Name>
+                        </maecBundle:AV_Classification>
+                        <maecBundle:AV_Classification>
+                            <cyboxCommon:Vendor>MaxSecure</cyboxCommon:Vendor>
+                            <maecBundle:Engine_Version>1.0.0.1</maecBundle:Engine_Version>
+                            <maecBundle:Classification_Name>Trojan.Malware.300983.susgen</maecBundle:Classification_Name>
+                        </maecBundle:AV_Classification>
+                    </maecBundle:AV_Classifications>
+                    <maecBundle:Process_Tree>
+                        <maecBundle:Root_Process xsi:type="maecBundle:ProcessTreeNodeType" id="Falcon:process_tree-03207430-860f-4039-b3c0-abdda9e97d4d">
+                            <maecBundle:Injected_Process xsi:type="ProcessObj:ProcessObjectType">
+                                <ProcessObj:PID>3936</ProcessObj:PID>
+                                <ProcessObj:Name>RogueTower.exe</ProcessObj:Name>
+                                <ProcessObj:Parent_PID>2144</ProcessObj:Parent_PID>
+                            </maecBundle:Injected_Process>
+                        </maecBundle:Root_Process>
+                    </maecBundle:Process_Tree>
+                    <maecBundle:Behaviors>
+                        <maecBundle:Behavior id="Falcon:behavior-d0e41e8e-17f3-4b05-bd46-eccbee133631">
+                            <maecBundle:Description>Found potential URL in binary/memory</maecBundle:Description>
+                            <maecBundle:Discovery_Method>
+                                <cyboxCommon:Description>string-3</cyboxCommon:Description>
+                            </maecBundle:Discovery_Method>
+                        </maecBundle:Behavior>
+                        <maecBundle:Behavior id="Falcon:behavior-0da49a6c-8a80-4b95-a8f8-6baa73dc8271">
+                            <maecBundle:Description>Input file contains API references not part of its Import Address Table (IAT)</maecBundle:Description>
+                            <maecBundle:Discovery_Method>
+                                <cyboxCommon:Description>string-64</cyboxCommon:Description>
+                            </maecBundle:Discovery_Method>
+                        </maecBundle:Behavior>
+                        <maecBundle:Behavior id="Falcon:behavior-6689d4dc-f03c-4668-bd1c-3091c0945e8f">
+                            <maecBundle:Description>Imports suspicious APIs</maecBundle:Description>
+                            <maecBundle:Discovery_Method>
+                                <cyboxCommon:Description>static-1</cyboxCommon:Description>
+                            </maecBundle:Discovery_Method>
+                        </maecBundle:Behavior>
+                        <maecBundle:Behavior id="Falcon:behavior-5194ee6e-9669-4158-bf0c-20d0660fc9f9">
+                            <maecBundle:Description>Matched Compiler/Packer signature</maecBundle:Description>
+                            <maecBundle:Discovery_Method>
+                                <cyboxCommon:Description>static-18</cyboxCommon:Description>
+                            </maecBundle:Discovery_Method>
+                        </maecBundle:Behavior>
+                        <maecBundle:Behavior id="Falcon:behavior-69ce2226-d43b-41b2-83d5-b9c770f2fad0">
+                            <maecBundle:Description>Contains PDB pathways</maecBundle:Description>
+                            <maecBundle:Discovery_Method>
+                                <cyboxCommon:Description>string-7</cyboxCommon:Description>
+                            </maecBundle:Discovery_Method>
+                        </maecBundle:Behavior>
+                        <maecBundle:Behavior id="Falcon:behavior-ad937f73-4889-4f85-9c25-2cf8af382a2d">
+                            <maecBundle:Description>Sample was identified as malicious by at least one Antivirus engine</maecBundle:Description>
+                            <maecBundle:Discovery_Method>
+                                <cyboxCommon:Description>avtest-0</cyboxCommon:Description>
+                            </maecBundle:Discovery_Method>
+                        </maecBundle:Behavior>
+                        <maecBundle:Behavior ordinal_position="851093" id="Falcon:behavior-f0992dd7-6748-4a9f-bb8a-a92975ee460f">
+                            <maecBundle:Description>Possibly tries to evade analysis by sleeping many times</maecBundle:Description>
+                            <maecBundle:Discovery_Method>
+                                <cyboxCommon:Description>api-47</cyboxCommon:Description>
+                            </maecBundle:Discovery_Method>
+                        </maecBundle:Behavior>
+                        <maecBundle:Behavior ordinal_position="33298096" id="Falcon:behavior-db5225a0-57a0-4418-85c3-dc68d1df5d7f">
+                            <maecBundle:Description>Contains ability to read software policies</maecBundle:Description>
+                            <maecBundle:Discovery_Method>
+                                <cyboxCommon:Description>registry-78</cyboxCommon:Description>
+                            </maecBundle:Discovery_Method>
+                        </maecBundle:Behavior>
+                    </maecBundle:Behaviors>
+                </maecPackage:Bundle>
+            </maecPackage:Findings_Bundles>
+        </maecPackage:Malware_Subject>
+    </maecPackage:Malware_Subjects>
+</maecPackage:MAEC_Package>

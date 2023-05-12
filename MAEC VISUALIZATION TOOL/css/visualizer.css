@@ -1,0 +1,56 @@
+/* Main Body of Tool */
+body{
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Upload MAEC XML Button */ 
+  .btn {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  /* Changing font size in MAEC Table */
+  .tabulator{
+      font-size:1.5rem;
+  }
+
+
+  /* MAEC Table Color Identifier Styling */
+  .xml-table .tag-color-swatch {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  /* MAEC Table Footer Styling */
+  .tabulator .tabulator-footer {
+    background-color: #ff0000e9;
+  }
+  
+  /* MAEC Tree font size and auto-expansion */
+  .xml-tree {
+    font-size: 0.75rem;
+    overflow-x: auto;
+  }
+  
+  /* Tree Tooltip Configuration */
+  .tip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    max-width: 90vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s, visibility 0.15s;
+    transition-delay: 0.3s;
+  }
+  
+  /* Tree Tooltip action on hover configuration */
+  .tip.is-visible {
+    transition-delay: 0s;
+    visibility: visible;
+    opacity: 1;
+  }
